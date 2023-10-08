@@ -100,7 +100,7 @@ VERILOG TUTORIAL FOR BEGINNERS. Disponível em:
 <http://referencedesigner.com/tutorials/verilog/verilog_01.php>. Acesso em: 12 
 out. 2018
 
-VERILOG TUTORIAL. Disponível em: <http://www.asicworld.com/verilog/veritut.html>. Acesso em: 12 out. 2018
+VERILOG TUTORIAL. Disponível em: <http://www.asic-world.com/verilog/veritut.html>. Acesso em: 12 out. 2018
 
 DOWNLOAD ICARUS VERILOG . Disponível em: <http://bleyer.org/icarus>. 
 Acesso em: 12 out. 2018

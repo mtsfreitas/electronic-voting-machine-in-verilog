@@ -1,5 +1,42 @@
 # electronic-voting-machine-in-verilog
 
+# Especificação
+
+Uma Máquina de Estados Finitos (Finite State Machine) é um modelo matemático amplamente utilizado na representação do comportamento de sistemas computacionais e circuitos lógicos em geral. O modelo pode ser genericamente descrito como uma máquina abstrata que sempre deve estar em algum de seus finitos estados, um por vez. O estado no qual a máquina se encontra em dado instante é conhecido como estado atual. Todos os estados armazenam informações sobre o passado, isto é, as mudanças ocorridas desde o início do sistema até o presente momento. Uma transição indica uma mudança de estado e é descrita através de uma condição que precisa ser realizada para que tal transição ocorra. Uma ação é a descrição de uma atividade que deve ser realizada em um determinado momento.
+
+Este trabalho prático consiste no projeto e implementação de uma Máquina de Estados Finitos que simule o comportamento de uma Urna Eletrônica simplificada. A FSM deverá ser responsável por receber o número de um candidato e concluir se o voto é válido ou não, de acordo com as especificações abaixo:
+
+● A urna possui quatro candidatos;
+
+● Os votos são contabilizados individualmente;
+
+● Os candidatos são identificados através de números de 4 dígitos, que deverão corresponder aos últimos 4 dígitos das matrículas dos 4 integrantes do grupo. Números fictícios deverão ser propostos por grupos com menos de 4 integrantes;
+
+● Qualquer voto destinado a um número inválido (diferente dos números de todos os candidatos cadastrados) é contabilizado como nulo;
+
+● O pleito elege um único candidato. Isso significa que um eleitor pode votar em somente um dos quatro candidatos disponíveis.
+
+
+A figura abaixo apresenta o diagrama básico do módulo Urna. A descrição detalhada das interfaces de entrada e saída é apresentada na Tabela 1.
+
+![image](https://github.com/mtsfreitas/morse-code-in-verilog/assets/21324690/9de0e9b4-ab2e-43af-b84d-ddc74fe3cbbf)
+
+Figura 1. Diagrama de entradas e saídas do módulo Urna
+
+![image](https://github.com/mtsfreitas/morse-code-in-verilog/assets/21324690/9869c810-d8cd-4916-af3e-bbf47b9d8ea5)
+
+Tabela 1. Descrição dos sinais do módulo Urna.
+
+A linguagem de descrição de hardware Verilog deverá ser utilizada para descrever o circuito tanto em ambiente virtual (simulação) quanto em ambiente físico (FPGA). Ao final, seu design deverá ser capaz de receber um número, dígito por dígito, concluir se o número corresponde a um voto válido ou nulo, contabilizar a informação e apresentar os resultados finais.
+
+Atenção: A Máquina de Estados Finitos deve ser projetada de forma a permitir que os votos sejam lidos, processados e contabilizados até que o sinal de controle finish seja ativado. Construa seus estados de forma que tal comportamento seja permitido.
+
+# 1. Etapas do desenvolvimento
+
+A linguagem de descrição de hardware Verilog deverá ser utilizada para descrever o circuito tanto em ambiente virtual (simulação) quanto em ambiente físico (FPGA). Ao final, seu design deverá ser capaz de receber um número, dígito por dígito, concluir se o número corresponde a um voto válido ou nulo, contabilizar a informação e apresentar os resultados finais.
+
+Atenção: A Máquina de Estados Finitos deve ser projetada de forma a permitir que os votos sejam lidos, processados e contabilizados até que o sinal de controle finish seja ativado. Construa seus estados de forma que tal comportamento seja permitido.
+
 # Introdução
 O objetivo deste trabalho foi a implementação em Verilog de uma máquina de estados de um controlador para um sistema de votação em urna simplificada. O voto deve ser contabilizado se uma das matrículas dos integrantes do grupo. As matrículas são: 3031; 3009; 2670; 2668 (matrícula inventada). Caso seja nenhuma delas, um voto nulo será adicionado. A chegar no último estado “Q5” representa que um voto será computado a um  candidato. Caso chegue no estado “Q12”, um voto nulo será computado. Para este trabalho, implementamos esta máquina de estados como uma máquina de Moore.
 

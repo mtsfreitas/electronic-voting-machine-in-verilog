@@ -32,6 +32,7 @@ Na Figura 1, observe que os bits de saída somente se alteram nos estados q5 e q
 Toda transição representada pelas setas na figura só são de fato realizadas se 
 Valid = 1. Adotamos uma matrícula aleatória (2668) para compor 4 candidatos, uma vez que nosso grupo é composto por 3 integrantes
 
+# Testbench
 
 ![image](https://github.com/mtsfreitas/electronic-voting-machine-in-verilog/assets/21324690/5d9aa045-912d-4e19-ad43-069fd74480c7)
 
